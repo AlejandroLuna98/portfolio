@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alejandro Luna</title>
-    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/build/css/app.css" />
   </head>
   <body>
     <section class="contenedor content-header">
       <div class="logo">
-        <img src="/img/triangles.svg" alt="Logo" />
+        <img src="/build/img/triangles.svg" alt="Logo" />
       </div>
       <nav class="nav">
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+
+        <button class="switch" id="switch">
+          <span><i class="fas fa-sun"></i> </span>
+          <span><i class="fas fa-moon"></i></span>
+        </button>
       </nav>
     </section>
 
-    <header class="header contenedor">
+    <header class="header contenedor" id="about">
       <div class="contenido-header">
         <h2>Hi, I´m <span>Alejandro Luna</span></h2>
         <h1>Web Developer</h1>
-        <p class="p-header">
+        <p>
           I am a web developer with knowledge in Frontend and Backend
           technologies, passionate about programming and computer science, with
           desire to contribute my knowledge to the achievement of objectives and
@@ -32,25 +36,25 @@
         </p>
       </div>
       <div class="img-header">
-        <img src="/img/Programming-pana.svg" alt="Imagen ilustrativa" />
+        <img src="/build/img/Programming-pana.svg" alt="Imagen ilustrativa" />
       </div>
     </header>
 
-    <section class="contenedor contendor-skills">
+    <section class="contenedor contendor-skills" id="skills">
       <h2 class="h2-skills">Skills</h2>
       <div class="skills">
-        <img src="/img/html-5.svg" alt="HTML" title="HTML" />
-        <img src="/img/css3svg.png" alt="CSS" title="CSS" />
-        <img src="/img/Js.png" alt="JS" title="JavaScript" />
-        <img src="/img/bs.jpg" alt="BS" title="Bootstrap" />
-        <img src="/img/sass.svg" alt="SASS" title="Sass" />
-        <img src="/img/php.png" alt="PHP" title="php" />
-        <img src="/img/mysql.svg" alt="MySQL" title="MySQL" />
-        <img src="/img/git.png" alt="GIT" title="Git" />
+        <img src="/build/img/html-5.svg" alt="HTML" title="HTML" />
+        <img src="/build/img/css3svg.png" alt="CSS" title="CSS" />
+        <img src="/build/img/Js.png" alt="JS" title="JavaScript" />
+        <img src="/build/img/bs.jpg" alt="BS" title="Bootstrap" />
+        <img src="/build/img/sass.svg" alt="SASS" title="Sass" />
+        <img src="/build/img/php.png" alt="PHP" title="php" />
+        <img src="/build/img/mysql.svg" alt="MySQL" title="MySQL" />
+        <img src="/build/img/git.png" alt="GIT" title="Git" />
       </div>
     </section>
 
-    <section class="contenedor contendor-skills">
+    <section class="contenedor contendor-skills" id="projects">
       <h2 class="h2-skills">Portfolio</h2>
 
       <div class="portfolio">
@@ -59,7 +63,7 @@
           href="https://galuna1.netlify.app/"
           target="_blank"
         >
-          <img src="/img/card.JPG" alt="Project" />
+          <img src="/build/img/card.JPG" alt="Project" />
           <div class="card-info">
             <h3>Music Festival</h3>
             <p>HTML,CSS,JS</p>
@@ -70,7 +74,7 @@
           href="https://glu1.netlify.app/"
           target="_blank"
         >
-          <img src="/img/nintendo.JPG" alt="Project" />
+          <img src="/build/img/nintendo.JPG" alt="Project" />
           <div class="card-info">
             <h3>Nintendo</h3>
             <p>HTML,CSS,BS,JS</p>
@@ -81,31 +85,10 @@
           href="https://barbershopgluna.netlify.app/"
           target="_blank"
         >
-          <img src="/img/barbershop.JPG" alt="Project" />
+          <img src="/build/img/barbershop.JPG" alt="Project" />
           <div class="card-info">
             <h3>Barber Shop</h3>
             <p>HTML,CSS,JS,PHP,MySQL</p>
-          </div>
-        </a>
-        <a class="porfolio-item" href="#" target="_blank">
-          <img src="/img/card.JPG" alt="Project" />
-          <div class="card-info">
-            <h3></h3>
-            <p>Project 123</p>
-          </div>
-        </a>
-        <a class="porfolio-item" href="#" target="_blank">
-          <img src="/img/card.JPG" alt="Project" />
-          <div class="card-info">
-            <h3>Project 1</h3>
-            <p>Project 123</p>
-          </div>
-        </a>
-        <a class="porfolio-item" href="#" target="_blank">
-          <img src="/img/card.JPG" />
-          <div class="card-info">
-            <h3>Project 1</h3>
-            <p>Project 123</p>
           </div>
         </a>
       </div>
@@ -127,6 +110,6 @@
       src="https://kit.fontawesome.com/e7f4ac25d3.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
   </body>
 </html>
